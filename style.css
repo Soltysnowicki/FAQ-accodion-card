@@ -38,6 +38,7 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 150px;
 }
 h1 {
   font-size: 32px;
@@ -49,7 +50,7 @@ h2:hover {
   color: var(--soft-red);
 }
 .content-wrapper {
-  margin-top: 38px;
+  margin-top: 20px;
   width: 279px;
 }
 h2 {
