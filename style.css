@@ -13,22 +13,17 @@
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
 }
+html {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  background-repeat: no-repeat;
+}
 body {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  height: 100vh;
-}
-#women {
-  max-width: 237px;
-  max-height: 180px;
-  position: relative;
-  bottom: 100px;
-}
-#shadow {
-  position: absolute;
 }
 main {
   width: 327px;
@@ -40,6 +35,25 @@ main {
   align-items: center;
   margin-top: 150px;
 }
+#women-mobile {
+  max-width: 237px;
+  max-height: 180px;
+  position: relative;
+  bottom: 100px;
+}
+#shadow-mobile {
+  position: absolute;
+}
+#women-desktop {
+  display: none;
+}
+#shadow-desktop {
+  display: none;
+}
+#box-desktop {
+  display: none;
+}
+
 h1 {
   font-size: 32px;
   text-align: center;
@@ -69,13 +83,16 @@ p {
 .desc {
   display: none;
 }
-
-.attribution {
+footer {
+  margin-bottom: 150px;
   font-size: 11px;
   text-align: center;
+  color: white;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+footer a {
+  color: var(--soft-red);
+  text-decoration: none;
 }
 
 /*transform properties*/
@@ -88,4 +105,93 @@ p {
 }
 .active .arrow {
   transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    width: 920px;
+    height: 509px;
+    background-color: var(--light-grayish-blue);
+    border-radius: 23px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  #women-mobile {
+    display: none;
+  }
+  #shadow-mobile {
+    display: none;
+  }
+  #women-desktop {
+    display: block;
+    max-width: 472px;
+    max-height: 359px;
+    position: relative;
+
+    transform: translate(-25%, 0%);
+  }
+  #shadow-desktop {
+    position: absolute;
+    transform: translate(-59%, 0%);
+    display: block;
+  }
+  #box-desktop {
+    display: block;
+    position: absolute;
+    transform: translate(-240%, 20%);
+  }
+  .content-wrapper {
+    margin-top: 20px;
+    width: 350px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+  }
+  h2:hover {
+    cursor: pointer;
+    color: var(--soft-red);
+  }
+
+  h2 {
+    font-size: 13px;
+    margin-top: 17px;
+  }
+  p {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .arrow {
+    position: relative;
+    left: 250px;
+    bottom: 20px;
+  }
+  .desc {
+    display: none;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  /*transform properties*/
+  .active h2 {
+    font-weight: bold;
+  }
+
+  .active p {
+    display: block;
+  }
+  .active .arrow {
+    transform: rotate(180deg);
+  }
 }
