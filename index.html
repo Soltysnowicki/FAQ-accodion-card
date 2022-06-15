@@ -16,51 +16,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <img
-      src="images\illustration-woman-online-mobile.svg"
-      alt="women using interactive monitor"
-    />
-
-    <div class="card-component">
+    <main class="card-component">
+      <img
+        src="images\illustration-woman-online-mobile.svg"
+        alt="women using interactive monitor"
+        id="women"
+      />
+      <img
+        src="images\bg-pattern-mobile.svg"
+        alt="women using interactive monitor"
+        id="shadow"
+      />
       <h1>FAQ</h1>
-      <h2>How many team members can I invite?</h2>
-      <p class="desc">
-        You can invite up to 2 additional users on the Free plan. There is no
-        limit on team members for the Premium plan.
-      </p>
 
-      <h2>What is the maximum file upload size?</h2>
-      <p class="desc">
-        No more than 2GB. All files in your account must fit your allotted
-        storage space.
-      </p>
-
-      <h2>How do I reset my password?</h2>
-      <p class="desc">
-        Click “Forgot password” from the login page or “Change password” from
-        your profile page. A reset link will be emailed to you.
-      </p>
-
-      <h2>Can I cancel my subscription?</h2>
-      <p class="desc">
-        Yes! Send us a message and we’ll process your request no questions
-        asked.
-      </p>
-
-      <h2>Do you provide additional support?</h2>
-      <p class="desc">
-        Chat and email support is available 24/7. Phone lines are open during
-        normal business hours.
-      </p>
-    </div>
-    <div class="attribution">
+      <div class="content-wrapper">
+        <div class="question-accordion">
+          <h2 class="question">How many team members can I invite?</h2>
+          <img src="images\icon-arrow-down.svg" alt="" class="arrow" />
+          <p class="desc hide">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+          <hr />
+        </div>
+        <div class="question-accordion">
+          <h2 class="question">What is the maximum file upload size?</h2>
+          <img src="images\icon-arrow-down.svg" alt="" class="arrow" />
+          <p class="desc hide">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+          <hr />
+        </div>
+        <div class="question-accordion">
+          <h2 class="question">How do I reset my password?</h2>
+          <img src="images\icon-arrow-down.svg" alt="" class="arrow" />
+          <p class="desc hide">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+          <hr />
+        </div>
+        <div class="question-accordion">
+          <h2 class="question">Can I cancel my subscription?</h2>
+          <img src="images\icon-arrow-down.svg" alt="" class="arrow" />
+          <p class="desc hide">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+          <hr />
+        </div>
+        <div class="question-accordion">
+          <h2 class="question">Do you provide additional support?</h2>
+          <img src="images\icon-arrow-down.svg" alt="" class="arrow" />
+          <p class="desc hide">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+          <hr />
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </footer>
   </body>
 </html>

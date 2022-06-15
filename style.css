@@ -11,23 +11,80 @@
   padding: 0;
   margin: 0;
   font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
 }
 body {
-  background-image: url("images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  height: 100vh;
 }
-img {
+#women {
   max-width: 237px;
   max-height: 180px;
+  position: relative;
+  bottom: 100px;
 }
+#shadow {
+  position: absolute;
+}
+main {
+  width: 327px;
+  height: 643px;
+  background-color: var(--light-grayish-blue);
+  border-radius: 23px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+}
+h2:hover {
+  cursor: pointer;
+  color: var(--soft-red);
+}
+.content-wrapper {
+  margin-top: 38px;
+  width: 279px;
+}
+h2 {
+  font-size: 13px;
+  margin-top: 17px;
+}
+p {
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.arrow {
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+}
+.desc {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*transform properties*/
+.active h2 {
+  font-weight: bold;
+}
+
+.active p {
+  display: block;
+}
+.active .arrow {
+  transform: rotate(180deg);
 }
