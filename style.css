@@ -1,3 +1,4 @@
+/* document color variables*/
 :root {
   --very-dark-desaturated-blue: hsl(238, 29%, 16%);
   --soft-red: hsl(14, 88%, 65%);
@@ -7,16 +8,19 @@
   --dark-grayish-blue: hsl(240, 6%, 50%);
   --light-grayish-blue: hsl(240, 5%, 91%);
 }
+/*html reset and font setting*/
 * {
   padding: 0;
   margin: 0;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
 }
+/*document background gradient*/
 html {
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
   background-repeat: no-repeat;
 }
+/*body formatting*/
 body {
   height: 100vh;
   width: 100vw;
@@ -25,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+/*main content card formatting*/
 main {
   width: 327px;
   height: 643px;
@@ -35,6 +40,7 @@ main {
   align-items: center;
   margin-top: 150px;
 }
+/*images formatting*/
 #women-mobile {
   max-width: 237px;
   max-height: 180px;
@@ -48,7 +54,7 @@ main {
 #box-desktop {
   display: none;
 }
-
+/*content formatting*/
 h1 {
   font-size: 32px;
   text-align: center;
@@ -78,6 +84,7 @@ p {
 .desc {
   display: none;
 }
+/*footer formatting*/
 footer {
   margin-bottom: 150px;
   font-size: 11px;
@@ -88,6 +95,9 @@ footer {
 footer a {
   color: var(--soft-red);
   text-decoration: none;
+}
+footer a:hover {
+  color: var(--light-grayish-blue);
 }
 
 /*transform properties*/
@@ -104,6 +114,7 @@ footer a {
   transition: transform 500ms;
 }
 
+/*device breakpoint for fesktop*/
 @media only screen and (min-width: 1000px) {
   main {
     width: 920px;
@@ -167,12 +178,8 @@ footer a {
     display: none;
   }
 
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  footer {
+    font-size: 14px;
   }
 
   /*transform properties*/
